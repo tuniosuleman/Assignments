@@ -119,7 +119,7 @@ import csv
 
 labels = ['Name', 'Age', 'Interests','Year', 'Amount Deposited'] 
 dct_arr = [
-  {'Name': 'Mr. Abdul Rafay', 'Age': 22,'Interests':'baseball,cricket','Year':1997,'Amount Deposited':50000},
+  {'Name': 'Mr. Abdul Rafay', 'Age': 22,'Interests':'football,cricket','Year':1997,'Amount Deposited':50000},
   {'Name': 'Ms. Nancy James', 'Age': 23,'Interests':'baseball,cricket','Year':1998,'Amount Deposited':51000}
   ]
 
