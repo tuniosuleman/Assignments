@@ -66,15 +66,18 @@ with open("names.json", "w") as json_file:
     json.dump(updated_dic, json_file)
 
 
-#writing CSV file...
+#writing dictionary to CSV file...
 
 import csv
 
-labels = ['Name', 'Age', 'Interests','Year', 'Amount Deposited'] 
-dct_arr = [
-  {'Name': 'Mr. Abdul Rafay', 'Age': 22,'Interests':'football,cricket','Year':1997,'Amount Deposited':50000},
-  {'Name': 'Ms. Nancy James', 'Age': 23,'Interests':'baseball,cricket','Year':1998,'Amount Deposited':51000}
-  ]
+dct_arr =[My_Dict['person_1'], My_Dict['person_2'] ]
+dct_arr
+
+Interests = 'football, cricket'
+(dct_arr[0]).update(Interests ='football, cricket' )
+Interests = 'baseball, cricket'
+(dct_arr[1]).update(Interests ='baseball, cricket' )
+labels = [i for i in dct_arr[0].keys()]
 
 try:
     with open('names.csv', 'w') as f:
@@ -86,6 +89,5 @@ except IOError:
     print("I/O error")
 
 #viewing csv file...
-
 import pandas as pd
 pd.read_csv('names.csv')
