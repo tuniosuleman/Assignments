@@ -71,12 +71,9 @@ with open("names.json", "w") as json_file:
 import csv
 
 dct_arr =[My_Dict['person_1'], My_Dict['person_2'] ]
-dct_arr
 
-Interests = 'football, cricket'
-(dct_arr[0]).update(Interests ='football, cricket' )
-Interests = 'baseball, cricket'
-(dct_arr[1]).update(Interests ='baseball, cricket' )
+(dct_arr[0]).update(Interests =dct_arr[0]['Interests'][0] )
+(dct_arr[1]).update(Interests =dct_arr[1]['Interests'][0] )
 labels = [i for i in dct_arr[0].keys()]
 
 try:
